@@ -3,7 +3,6 @@ import OverallStat from "../models/OverallStat.js";
 import Transaction from "../models/Transaction.js";
 
 export const getUser = async (req, res) => {
-  console.log("asdq23eeqw");
   try {
     const { id } = req.params;
     const user = await User.findById(id);
